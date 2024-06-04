@@ -8,7 +8,7 @@ DOWNLOADS_PATH="$HOME/Downloads"
 
 # Enable dry run mode if desired
 DRY_RUN=false
-if [[ "$1" == "--dry-run" ]]; then
+if [[ "${1-}" == "--dry-run" ]]; then
     DRY_RUN=true
     echo "Dry run mode enabled. No changes will be made."
 fi
