@@ -140,12 +140,12 @@ main_installation() {
     echo "Starting installation..."
     install_required_packages
     install_nerd_fonts
-    install_zsh_ohmyzsh
-    configure_ohmyzsh
     install_brave_browser
     install_virtualization
     add_dracula_theme
     install_flatpak_packages
+    install_zsh_ohmyzsh
+    configure_ohmyzsh
 }
 
 # Ensure the script is running with sudo privileges
