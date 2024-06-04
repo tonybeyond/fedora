@@ -114,7 +114,7 @@ add_dracula_theme () {
 install_flatpak_packages() {
     echo "Installing Flatpak packages..."
     $DRY_RUN || flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    FLATPAK_PACKAGES=("com.parsecgaming.parsec" "md.obsidian.Obsidian" "org.nextcloud.Nextcloud" "com.visualstudio.code")
+    FLATPAK_PACKAGES=("com.parsecgaming.parsec" "md.obsidian.Obsidian" "org.nextcloud.Nextcloud" "com.visualstudio.code" "org.nickvision.tubeconverter" "com.github.tchx84.Flatseal" "com.github.flxzt.rnote")
     
     for package in "${FLATPAK_PACKAGES[@]}"; do
         echo "Installing $package..."
