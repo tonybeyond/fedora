@@ -2,10 +2,14 @@
 A fedora installation
 
 # gnome settings backup
+```shell
 dconf dump / > gnome-settings-backup.txt
+```
 
 # gnome settings restore
+```shell
 dconf load / < gnome-settings-backup.txt
+```
 
 # installed packages
 ```shell
@@ -19,7 +23,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 
 # packages
+```shell
 sudo dnf install fzf stow hyfetch exa kitty neovim gnome-shell-extension-pop-shell akmod-nvidia nvidia-smi xorg-x11-drv-nvidia-cuda -y
+```
 
 # kickstart neovim
 ```shell
